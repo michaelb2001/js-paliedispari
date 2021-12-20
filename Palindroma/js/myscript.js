@@ -14,6 +14,11 @@ bottone.addEventListener("click",function(){
 });
 
 function revString(stringa) {
-     return stringa.split("").reverse().join("");
+    //return stringa.split("").reverse().join("");
+    var nuovaStringa = "";
+    for (var i = stringa.length - 1; i >= 0; i--) {
+        nuovaStringa += stringa[i];
+    }
+    return nuovaStringa;
 }
 
